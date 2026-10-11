@@ -1,0 +1,10 @@
+mode: offline
+split: dev
+seed: 42
+max_steps: 40
+max_errors: 3
+max_context_tokens: 16384
+reserved_generation_tokens: 512
+validate_communication: true
+asynchronous: false
+# Only already exposed Dev fixtures; actual model clients are disabled.

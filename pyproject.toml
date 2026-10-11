@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "policytrace"
+version = "0.0.1"
+description = "PolicyTrace-RL Stage 0 compatibility checks"
+requires-python = ">=3.11"
+dependencies = ["tau2==0.2.1.dev0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/stage0", "tests/stage1", "tests/stage2"]
+addopts = "-ra"
+

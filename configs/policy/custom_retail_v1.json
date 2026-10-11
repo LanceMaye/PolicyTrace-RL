@@ -1,0 +1,15 @@
+{
+  "version": "areal-retail-sft-v1",
+  "base_fork_commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+  "policy_source": "configs/policy/retail.sft_v1.md",
+  "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+  "runtime_policy_path": "external/tau2-bench/data/tau2/domains/retail/policy.md",
+  "original_backup": "configs/policy/backups/retail.e33e9511.original.md",
+  "original_file_sha256": "4313d3fef8acf919f555fa17fbce929cc3ed1cef2dd8f0d35ff5c8c3364de176",
+  "source": "exact business policy extracted from frozen AReaL Retail SFT",
+  "source_dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+  "max_tool_calls_per_turn": null,
+  "forbid_text_with_tool_calls": true,
+  "confirmation_wording": "SFT verbatim: you'd better list the action details and obtain explicit user confirmation; operation-specific confirmations retained",
+  "official_policy_comparison": "custom setting; not the original policy benchmark"
+}

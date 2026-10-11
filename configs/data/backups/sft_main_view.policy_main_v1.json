@@ -1,0 +1,19 @@
+{
+  "version": "policytrace-sft-target-policy-v1",
+  "active_sft_view": "policy_main_v1",
+  "manifest": "data/processed/stage2/policy_main_v1/manifest.json",
+  "train_tokens": "data/processed/stage2/policy_main_v1/sft_train_main.tokenized.jsonl.gz",
+  "val_tokens": "data/processed/stage2/policy_main_v1/sft_val_main.tokenized.jsonl.gz",
+  "target_gate": {
+    "max_tool_calls": 1,
+    "forbid_text_with_tool_calls": true,
+    "history_handling": "preserve_and_annotate_masked_history"
+  },
+  "policy_source": "external/tau2-bench/data/tau2/domains/retail/policy.md",
+  "policy_modified": false,
+  "retokenize": false,
+  "max_length": 16384,
+  "truncate": false,
+  "source_quality_excluded_handling": "remain_excluded_no_reinclusion",
+  "rollback": "Use the original full SFT train/val files only after explicit policy decision; frozen originals are retained."
+}

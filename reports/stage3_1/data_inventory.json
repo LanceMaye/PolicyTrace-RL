@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "required_files": 10,
+  "required_bytes": 46809598,
+  "issues": [],
+  "lock_sha256": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+  "test_bodies_deserialized": 0,
+  "categories": {
+    "GIT_TRACKED_CODE": {
+      "publication_list": "reports/stage3_1/git_safety_audit.json",
+      "meaning": "Git publication candidates; root repository may not be initialized"
+    },
+    "GIT_IGNORED_PRIVATE_REQUIRED_E0": {
+      "files": 10,
+      "bytes": 46809598
+    },
+    "GIT_IGNORED_PRIVATE_OPTIONAL_STAGE4": {
+      "required_for_e0": false,
+      "local_inventory": "data/private/stage3_1/optional_stage4_inventory.json"
+    },
+    "DOWNLOAD_ON_REMOTE_BY_USER": {
+      "model_id": "Qwen/Qwen2.5-3B-Instruct",
+      "weights_downloaded_by_preparation": false
+    },
+    "RUNTIME_SECRET_MANUAL": {
+      "environment_variable": "DEEPSEEK_API_KEY",
+      "value_in_inventory": false
+    }
+  }
+}

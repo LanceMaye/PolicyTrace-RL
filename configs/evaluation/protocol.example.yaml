@@ -1,0 +1,28 @@
+# Reference configuration only; CLI plans use the JSON EvaluationPlan schema.
+protocol_version: policytrace-eval-v1
+environment_sha: e33e9511e4f51e5cfa16e12b02d0e4ab327b5887
+dataset_revision: 86971dc03da6e7c1a7933295e05b84aab8215386
+domain: retail
+task_set:
+  id: STAGE2_TO_FREEZE
+  task_ids: null
+  sha256: null
+model:
+  id: CHECKPOINT_TO_BE_SELECTED
+  checkpoint: null
+simulator:
+  model: TO_BE_FROZEN_BEFORE_BENCHMARK
+  config_id: null
+  provider_seed_supported: null
+trials_per_task: 4
+trial_ids: ['0', '1', '2', '3']
+max_steps: 100
+max_errors: 10
+max_context_tokens: null
+failure_policy: count_started_execution_or_scoring_failure_as_failure
+missing_trial_policy: incomplete_with_null_pass_values
+retries: 0
+training_reward:
+  name: R0
+  version: official-v1
+  extension_plugin: null

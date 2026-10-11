@@ -1,0 +1,40 @@
+{
+  "revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+  "files": {
+    "README.md": {
+      "size_bytes": 6722,
+      "sha256": "53b523063cab3a6c32f9a7f21546672860acd56afc07eee2566d9724cc07a004",
+      "upstream_sha256": null
+    },
+    "tau2_rl_train.jsonl": {
+      "size_bytes": 8692745,
+      "sha256": "f7cd4c53c279819cf7c96da3986295f94bd613c0ee078715e8ac6238ad1e5cfb",
+      "upstream_sha256": null
+    },
+    "tau2_sft_train.jsonl": {
+      "size_bytes": 874041865,
+      "sha256": "24bc4d479799ef5d5efec7a5388ea2de6bf5dc5ab7c2c83e9b5ee26fa5813804",
+      "upstream_sha256": "24bc4d479799ef5d5efec7a5388ea2de6bf5dc5ab7c2c83e9b5ee26fa5813804"
+    },
+    "tau2_rl_database/tau2_retail_new_db_1.json": {
+      "size_bytes": 7635287,
+      "sha256": "785b3fe40f8f9e9ac033bf3071c3f3bd27da4108ce68532fb4170be5d3a1c07e",
+      "upstream_sha256": null
+    },
+    "tau2_rl_database/tau2_retail_new_db_2.json": {
+      "size_bytes": 10632839,
+      "sha256": "4cfa2f845239052f0e062328dbfb2b41477639079c123e957a473f9e192c0e4a",
+      "upstream_sha256": "4cfa2f845239052f0e062328dbfb2b41477639079c123e957a473f9e192c0e4a"
+    },
+    "tau2_rl_database/tau2_retail_new_db_3.json": {
+      "size_bytes": 4069707,
+      "sha256": "2d872f166fa11da78df4dba12905e8dcf2e71d1873ec2a8f0c26c7d2a686e6e7",
+      "upstream_sha256": null
+    },
+    "tau2_rl_database/tau2_retail_new_db_4.json": {
+      "size_bytes": 8622494,
+      "sha256": "00b2095d6351c958b546561f791663c413e83346b1becf59cd55a1c3a49b749b",
+      "upstream_sha256": null
+    }
+  }
+}

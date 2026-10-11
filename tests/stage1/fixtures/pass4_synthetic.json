@@ -1,0 +1,813 @@
+{
+  "plan": {
+    "context": {
+      "protocol_version": "policytrace-eval-v1",
+      "purpose": "diagnostic",
+      "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+      "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+      "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+      "domain": "retail",
+      "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+      "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+      "model_id": "SYNTHETIC_NO_MODEL",
+      "model_checkpoint": null,
+      "model_version": null,
+      "model_sampling": {
+        "temperature": 0.0,
+        "top_p": null,
+        "max_output_tokens": 128,
+        "thinking": "unspecified",
+        "provider_seed_supported": false
+      },
+      "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+      "simulator_version": null,
+      "simulator_config_id": "synthetic-v1",
+      "simulator_sampling": {
+        "temperature": 0.0,
+        "top_p": null,
+        "max_output_tokens": 128,
+        "thinking": "unspecified",
+        "provider_seed_supported": false
+      },
+      "harness_version": "synthetic-fixture-v1",
+      "max_steps": 10,
+      "max_errors": 2,
+      "max_context_tokens": null,
+      "unrecorded_fields": []
+    },
+    "task_ids": [
+      "synthetic_a",
+      "synthetic_b"
+    ],
+    "trial_ids": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "trials_per_task": 4,
+    "provenance": "synthetic"
+  },
+  "episodes": [
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_a-0",
+      "task_id": "synthetic_a",
+      "trial_id": "0",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 0,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_a-1",
+      "task_id": "synthetic_a",
+      "trial_id": "1",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 1,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_a-2",
+      "task_id": "synthetic_a",
+      "trial_id": "2",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 2,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_a-3",
+      "task_id": "synthetic_a",
+      "trial_id": "3",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 3,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_b-0",
+      "task_id": "synthetic_b",
+      "trial_id": "0",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 0,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_b-1",
+      "task_id": "synthetic_b",
+      "trial_id": "1",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 1,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_b-2",
+      "task_id": "synthetic_b",
+      "trial_id": "2",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 2,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 0.0,
+        "success": false,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    },
+    {
+      "context": {
+        "protocol_version": "policytrace-eval-v1",
+        "purpose": "diagnostic",
+        "run_id": "SYNTHETIC_DEMO_NO_MODEL_CALLS",
+        "task_set_id": "SYNTHETIC_ONLY_NOT_STAGE2_SPLIT",
+        "task_set_sha256": "308f5e3399b4d4e168f1455348e0ec07b3303c4250884d0364c3d18a9d134978",
+        "domain": "retail",
+        "environment_sha": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "dataset_revision": "86971dc03da6e7c1a7933295e05b84aab8215386",
+        "model_id": "SYNTHETIC_NO_MODEL",
+        "model_checkpoint": null,
+        "model_version": null,
+        "model_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "simulator_model": "SYNTHETIC_NO_USER_MODEL",
+        "simulator_version": null,
+        "simulator_config_id": "synthetic-v1",
+        "simulator_sampling": {
+          "temperature": 0.0,
+          "top_p": null,
+          "max_output_tokens": 128,
+          "thinking": "unspecified",
+          "provider_seed_supported": false
+        },
+        "harness_version": "synthetic-fixture-v1",
+        "max_steps": 10,
+        "max_errors": 2,
+        "max_context_tokens": null,
+        "unrecorded_fields": []
+      },
+      "episode_id": "synthetic-synthetic_b-3",
+      "task_id": "synthetic_b",
+      "trial_id": "3",
+      "provenance": "synthetic",
+      "db_snapshot_id": "synthetic/snapshot.json",
+      "db_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "seed": 3,
+      "evaluated_at": "2026-10-10T00:00:00Z",
+      "original_timestamp": null,
+      "termination_reason": "user_stop",
+      "execution_status": "completed",
+      "scoring_status": "scored",
+      "official_score": {
+        "official_reward": 1.0,
+        "success": true,
+        "reward_components": null,
+        "reward_basis": null,
+        "db_match": null,
+        "raw_reward": null
+      },
+      "tools": {
+        "attempted": 0,
+        "attempt_scope": "all_attempts",
+        "parse_errors": 0,
+        "execution_errors": 0,
+        "framework_errors": 0,
+        "missing_reason": null
+      },
+      "duration_seconds": null,
+      "resources": {
+        "student": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "user": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "teacher": {
+          "prompt_tokens": null,
+          "completion_tokens": null,
+          "source": "not_available",
+          "missing_reason": "not recorded"
+        },
+        "api_costs": null,
+        "gpu_seconds": null,
+        "teacher_inference_seconds": null,
+        "training_tokens": null,
+        "missing_reason": "No training/GPU telemetry recorded"
+      },
+      "trajectory": null,
+      "error_code": null,
+      "diagnostic_codes": [],
+      "task_type": null
+    }
+  ]
+}

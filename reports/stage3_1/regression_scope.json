@@ -1,0 +1,46 @@
+{
+  "test_only_fixture_boundary": "raw iterator limited to existing exposed Dev; original Stage 0 selection order restored",
+  "deselected": [
+    {
+      "nodeid": "tests/stage0/test_task_schema.py::test_all_retail_schemas",
+      "reason": "full raw Task body audit includes frozen Test"
+    },
+    {
+      "nodeid": "tests/stage2/test_full_data_and_splits.py::test_pinned_sources_full_counts_and_no_schema_error",
+      "reason": "prepared fixture loads full frozen Test features"
+    },
+    {
+      "nodeid": "tests/stage2/test_full_data_and_splits.py::test_actual_overlap_claims_are_conservative",
+      "reason": "prepared fixture loads full frozen Test features"
+    },
+    {
+      "nodeid": "tests/stage2/test_full_data_and_splits.py::test_full_group_isolation_and_exposed_tasks",
+      "reason": "prepared fixture loads full frozen Test features"
+    },
+    {
+      "nodeid": "tests/stage2/test_full_data_and_splits.py::test_seeded_global_assignment_reproduces_manifests",
+      "reason": "regroups Test using full features; hashes checked separately"
+    },
+    {
+      "nodeid": "tests/stage2/test_full_data_and_splits.py::test_sft_quality_filter_does_not_reduce_experts_for_rl_effect",
+      "reason": "shared prepared fixture also loads Test features; SFT hashes and mask tests remain"
+    },
+    {
+      "nodeid": "tests/stage2/test_full_data_and_splits.py::test_actual_external_candidate_count_and_honest_status",
+      "reason": "external Test audit artifact inspection deferred"
+    },
+    {
+      "nodeid": "tests/stage2/test_task_pool_integration.py::test_train_dev_initialization_isolation_and_official_scoring[rl_train_full]",
+      "reason": "historical pool selects arbitrary Train/Dev reference fixture"
+    },
+    {
+      "nodeid": "tests/stage2/test_task_pool_integration.py::test_train_dev_initialization_isolation_and_official_scoring[rl_dev]",
+      "reason": "historical pool selects arbitrary Train/Dev reference fixture"
+    },
+    {
+      "nodeid": "tests/stage2/test_task_pool_integration.py::test_out_of_pool_and_changed_snapshot_are_rejected",
+      "reason": "historical corrupted pool selects Train Task"
+    }
+  ],
+  "exit_code": 0
+}

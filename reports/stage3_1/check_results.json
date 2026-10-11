@@ -1,0 +1,211 @@
+{
+  "status": "PASS_OFFLINE",
+  "executed_at": "2026-10-11T09:50:03.046652+00:00",
+  "commands": [
+    {
+      "name": "offline",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/stage3_1",
+        "-q",
+        "--basetemp=D:\\Codes\\policytrace\\data\\private\\stage3_1\\acceptance\\51f09b7425ef49b18c8a6e51ee61c664\\offline",
+        "--junitxml=D:\\Codes\\policytrace\\data\\private\\stage3_1\\acceptance\\51f09b7425ef49b18c8a6e51ee61c664\\offline.xml"
+      ],
+      "exit_code": 0,
+      "seconds": 20.69,
+      "private_log": "data/private/stage3_1/acceptance/51f09b7425ef49b18c8a6e51ee61c664/offline.log",
+      "log_sha256": "5755f387bf686f42ca29db16d8eb0c3a949fdb2fd083ea27d5b255a0f0ac9bcc"
+    },
+    {
+      "name": "harness",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/stage3_0",
+        "-q",
+        "--basetemp=D:\\Codes\\policytrace\\data\\private\\stage3_1\\acceptance\\51f09b7425ef49b18c8a6e51ee61c664\\harness",
+        "--junitxml=D:\\Codes\\policytrace\\data\\private\\stage3_1\\acceptance\\51f09b7425ef49b18c8a6e51ee61c664\\harness.xml"
+      ],
+      "exit_code": 0,
+      "seconds": 82.766,
+      "private_log": "data/private/stage3_1/acceptance/51f09b7425ef49b18c8a6e51ee61c664/harness.log",
+      "log_sha256": "1661d4fb70564a3fb5ac8dc4ad45227d0a31d2f9296dac3d6f8c3e7a1bbacef9"
+    },
+    {
+      "name": "regression",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "-p",
+        "policytrace.harness.regression_scope",
+        "tests/stage0",
+        "tests/stage1",
+        "tests/stage2",
+        "tests/multi_tool_compatibility",
+        "--policytrace-scope-report=reports/stage3_1/regression_scope.json",
+        "-q",
+        "--basetemp=D:\\Codes\\policytrace\\data\\private\\stage3_1\\acceptance\\51f09b7425ef49b18c8a6e51ee61c664\\regression",
+        "--junitxml=D:\\Codes\\policytrace\\data\\private\\stage3_1\\acceptance\\51f09b7425ef49b18c8a6e51ee61c664\\regression.xml"
+      ],
+      "exit_code": 0,
+      "seconds": 114.95,
+      "private_log": "data/private/stage3_1/acceptance/51f09b7425ef49b18c8a6e51ee61c664/regression.log",
+      "log_sha256": "bf825842e069873bb5dcd8c81c41d4d3ce2d9fb1b948db4edbcd0c04f0f90553"
+    },
+    {
+      "name": "offline_supplement",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/stage3_1",
+        "-q",
+        "--basetemp=data/private/stage3_1/final_offline_tmp",
+        "--junitxml=data/private/stage3_1/final_offline.xml"
+      ],
+      "exit_code": 0,
+      "private_log": "data/private/stage3_1/final_offline.log",
+      "log_sha256": "d796a453c89ffebd13318f80eb89b3ff63ebb718a133fca857bfb7dc7cea791a"
+    },
+    {
+      "name": "offline_final",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/stage3_1",
+        "-q",
+        "--basetemp=data/private/stage3_1/publish_final_tmp",
+        "--junitxml=data/private/stage3_1/publish_final.xml"
+      ],
+      "exit_code": 0,
+      "private_log": "data/private/stage3_1/publish_final.log",
+      "log_sha256": "c358483b4043d564c5ff4259ac3c94c2c9d0807786f81ace7df674f47244ef35",
+      "pytest_seconds": 13.22
+    },
+    {
+      "name": "security_final",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/stage3_1/test_local.py",
+        "-k",
+        "archive or publication",
+        "-q",
+        "--basetemp=data/private/stage3_1/security_final_tmp",
+        "--junitxml=data/private/stage3_1/security_final.xml"
+      ],
+      "exit_code": 0,
+      "tests": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "private_log": "data/private/stage3_1/security_final.log",
+      "log_sha256": "9f3e6b0f68f3c27b71a2b9adac00218471aeb51e79373c51c4f58e93c2871b16"
+    }
+  ],
+  "tests": {
+    "offline": {
+      "tests": 65,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "private_xml_sha256": "6122f8a3640874aeb92fc1d2f40d9531453ea4d50d2055bdb609eaea13483139"
+    },
+    "harness": {
+      "tests": 61,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "private_xml_sha256": "1a14bee906cbdcc6ab852f2f91004820dd64585200c71f2071ac170114f195a6"
+    },
+    "regression": {
+      "tests": 164,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "private_xml_sha256": "4ea6381f3bad492dc59b667a15ea794c9df75b84b33d79baed95e3b6fb5bc3dc"
+    }
+  },
+  "historical_integrity": {
+    "before_count": 2183,
+    "changed": [
+      "src/policytrace/harness/agent_adapter.py",
+      "src/policytrace/harness/model_client.py"
+    ],
+    "unexpected": [],
+    "historical_reports_unchanged": true,
+    "raw_db_split_tokenizer_unchanged": true,
+    "historical_api_ledgers_unchanged": true
+  },
+  "fork": {
+    "commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+    "status": "M data/tau2/domains/retail/policy.md",
+    "upstream_working_tree_clean": false,
+    "authorized_policy_patch_only": true,
+    "policy_version": "areal-retail-sft-v1",
+    "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+    "patch_sha256": "3b5d4588cd11a3d7b5fbb5081c82dfc5bb168b1c0239fdcc3a2fac8ac0be69bb"
+  },
+  "paid_api_calls": 0,
+  "weights_downloaded": false,
+  "real_student_forward": false,
+  "gpu_used": false,
+  "test_bodies_deserialized": 0,
+  "git_commit_or_push": false,
+  "ssh_connected": false,
+  "real_e0_executed": false,
+  "updated_at": "2026-10-11T10:10:17.146100+00:00",
+  "code_sha256": "15ca098969fda2cb0954bb5bbf4dd02dd53fe84d349982abb45af76841b86d75",
+  "dependencies_candidate_installed": false,
+  "cli_checks": "PASS",
+  "tested_code_files": {
+    "src/policytrace/stage3_1/assets.py": "7309650f9bc53160b765c2359080064aa30906aa848a014e4367d816202e5a99",
+    "src/policytrace/stage3_1/budget.py": "8ff879a22df50b3f228126e380437d053f640eefa95bbae62040b69e272f629e",
+    "src/policytrace/stage3_1/cli.py": "11b4d15efce31144018f6dc20c0f990b96f92441b7562dc792e9a693359ca57a",
+    "src/policytrace/stage3_1/deepseek.py": "47ecda7e2c1cb7e20cbb058e95fb471cf3ac7e01da572d13776a3bc5d54e7517",
+    "src/policytrace/stage3_1/download.py": "a7255eca4cc634eeefd11bfe7e3d748155ca4f15553466d70f03147ffb9baa9c",
+    "src/policytrace/stage3_1/protocol.py": "08714bbad0ab1c1a97f705832f2cfb31786c49fc6ca371d9c27489526647f068",
+    "src/policytrace/stage3_1/runner.py": "4926fd3d79f8869449bb00be20e5a1669519b7bf6a5260d7e5f794286d3b3b72",
+    "src/policytrace/stage3_1/student.py": "3ed0ef890fad860505deaa45f4a5559370cb10eeb04f431e58985cd058e8172f",
+    "src/policytrace/stage3_1/summary.py": "d2472fd911521daa8c4e1a981a18befb35e47e0bbae3ac5ee8e04a436adf44fd",
+    "src/policytrace/stage3_1/sync.py": "bfbd74432e80e59bd22c738758bdd06b03670ad7151cca044347f97fc60f63e0",
+    "src/policytrace/stage3_1/__init__.py": "16bb17566be469340ad1282d009d2c8fa67457ba04b241ba66c20e5bd26edc8b",
+    "scripts/stage3_1_bootstrap_policy.py": "eda1e87573c0ea9befc9c452e8c7c2d1c5c3081527fce1c1a4a5a04517798e03",
+    "scripts/stage3_1_check.py": "0a79c55d0ba0b70f3ad122799ba8724b30e4ba20e066b5ba9cf4238a44affcd4",
+    "scripts/stage3_1_data_inventory.py": "6d65ac786b49946198bda09dadd8b9d4b0c75473e2bc91918b607f7c487b5105",
+    "scripts/stage3_1_download_student.py": "c2e1d2e4128e37cc83cc2703b9327352ec5e7bf3dc66bfbe662a3ef3ce34d63d",
+    "scripts/stage3_1_git_audit.py": "2971840a6c51797dcfa276f49b326890bea334f0c1ac230509a2f47d35ac698e",
+    "scripts/stage3_1_run.py": "b24ee50e0fbb52e80f67dcfccc9609f3fc64fa98f9f0f05fe3240ee272f084be",
+    "scripts/stage3_1_summarize.py": "638ff405d8816b710d2eaad9426442385c843d809a123c2a857a9f3e21c11be8",
+    "tests/stage3_1/conftest.py": "10ef4e3649c713ac18f3c473cd7ed0af5e31849149327dfaf962a7e309f102bc",
+    "tests/stage3_1/test_local.py": "eda8eda896f6cf0e590d9215af162fb5cdbd6d30f4842019748070bc8ab39c6e",
+    "configs/harness/stage3_1.example.json": "ff5fb0f25e50aa1cdff7f72df6ec5c12c719fbafa850e3a7c832aa46f9ab25f7",
+    "configs/harness/stage3_1_assets.lock.json": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+    "requirements-stage3_1-candidate.txt": "3acd2c065d0f3ed2b74ca21c67eb61230575c4f83ea5219ef92ee282c6ed4716",
+    "src/policytrace/harness/model_client.py": "27cd654f8a275c08c3d893606d7c5a02c9b0842e8a27ddfa00014cbc56e0bdd7",
+    "src/policytrace/harness/agent_adapter.py": "d4c186768996a6e14751504bb038b785cc938ce4ff6faf7f8a608005c945bcf8"
+  },
+  "local_prep_status": "LOCAL_PREP_PASS",
+  "real_run_status": "BLOCKED_MODEL_ENV_PRICE",
+  "git_safety_status": "PASS_PROSPECTIVE_PUBLICATION"
+}

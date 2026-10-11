@@ -1,0 +1,23 @@
+{
+  "version": "policytrace-sft-mixed-only-v2",
+  "active_sft_view": "policy_sft_v2",
+  "manifest": "data/processed/stage2/policy_sft_v2/manifest.json",
+  "train_tokens": "data/processed/stage2/policy_sft_v2/sft_train_main.tokenized.jsonl.gz",
+  "val_tokens": "data/processed/stage2/policy_sft_v2/sft_val_main.tokenized.jsonl.gz",
+  "target_gate": {
+    "max_tool_calls": null,
+    "forbid_text_with_tool_calls": true,
+    "history_handling": "preserve_and_annotate_masked_history"
+  },
+  "policy_version": "areal-retail-sft-v1",
+  "policy_source": "configs/policy/retail.sft_v1.md",
+  "policy_runtime": "external/tau2-bench/data/tau2/domains/retail/policy.md",
+  "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+  "policy_modified": true,
+  "retokenize": false,
+  "token_strategy": "reuse byte-exact original SFT token records; only partition changes",
+  "max_length": 16384,
+  "truncate": false,
+  "source_quality_excluded_handling": "remain_excluded_no_reinclusion",
+  "rollback": "Original policy and active configuration backed up under configs/policy/backups and configs/data/backups; v1 data retained"
+}

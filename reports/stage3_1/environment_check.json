@@ -1,0 +1,67 @@
+{
+  "status": "BLOCKED",
+  "blockers": [
+    "BLOCKED_MODEL",
+    "BLOCKED_PRICE",
+    "BLOCKED_ENV"
+  ],
+  "data": {
+    "status": "PASS",
+    "required_files": 10,
+    "required_bytes": 46809598,
+    "issues": [],
+    "lock_sha256": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+    "test_bodies_deserialized": 0,
+    "categories": {
+      "GIT_TRACKED_CODE": {
+        "publication_list": "reports/stage3_1/git_safety_audit.json",
+        "meaning": "Git publication candidates; root repository may not be initialized"
+      },
+      "GIT_IGNORED_PRIVATE_REQUIRED_E0": {
+        "files": 10,
+        "bytes": 46809598
+      },
+      "GIT_IGNORED_PRIVATE_OPTIONAL_STAGE4": {
+        "required_for_e0": false,
+        "local_inventory": "data/private/stage3_1/optional_stage4_inventory.json"
+      },
+      "DOWNLOAD_ON_REMOTE_BY_USER": {
+        "model_id": "Qwen/Qwen2.5-3B-Instruct",
+        "weights_downloaded_by_preparation": false
+      },
+      "RUNTIME_SECRET_MANUAL": {
+        "environment_variable": "DEEPSEEK_API_KEY",
+        "value_in_inventory": false
+      }
+    }
+  },
+  "fork": {
+    "commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+    "status": "M data/tau2/domains/retail/policy.md",
+    "upstream_working_tree_clean": false,
+    "authorized_policy_patch_only": true,
+    "policy_version": "areal-retail-sft-v1",
+    "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+    "patch_sha256": "3b5d4588cd11a3d7b5fbb5081c82dfc5bb168b1c0239fdcc3a2fac8ac0be69bb"
+  },
+  "dependencies": {
+    "torch": null,
+    "transformers": null,
+    "accelerate": null,
+    "huggingface-hub": "1.33.0",
+    "tokenizers": "0.23.2",
+    "tau2": "0.2.1.dev0",
+    "litellm": "1.104.2",
+    "httpx": "0.28.1"
+  },
+  "gpu": {
+    "checked": false,
+    "cuda_available": null,
+    "bf16_supported": null
+  },
+  "api_key_present": true,
+  "model_verified": false,
+  "weights_loaded": false,
+  "paid_api_calls": 0,
+  "test_bodies_deserialized": 0
+}

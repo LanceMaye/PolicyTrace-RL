@@ -1,0 +1,75 @@
+{
+  "version": "stage3_1-assets-v1",
+  "files": [
+    {
+      "path": "data/raw/tau2_rl_train.jsonl",
+      "bytes": 8692745,
+      "sha256": "f7cd4c53c279819cf7c96da3986295f94bd613c0ee078715e8ac6238ad1e5cfb",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/raw/tau2_rl_database/tau2_retail_new_db_1.json",
+      "bytes": 7635287,
+      "sha256": "785b3fe40f8f9e9ac033bf3071c3f3bd27da4108ce68532fb4170be5d3a1c07e",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/raw/tau2_rl_database/tau2_retail_new_db_2.json",
+      "bytes": 10632839,
+      "sha256": "4cfa2f845239052f0e062328dbfb2b41477639079c123e957a473f9e192c0e4a",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/raw/tau2_rl_database/tau2_retail_new_db_3.json",
+      "bytes": 4069707,
+      "sha256": "2d872f166fa11da78df4dba12905e8dcf2e71d1873ec2a8f0c26c7d2a686e6e7",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/raw/tau2_rl_database/tau2_retail_new_db_4.json",
+      "bytes": 8622494,
+      "sha256": "00b2095d6351c958b546561f791663c413e83346b1becf59cd55a1c3a49b749b",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/splits/stage2/rl_dev.json",
+      "bytes": 58255,
+      "sha256": "313428d577b0372616c0c202470449c031e3269c2d15ca9ca6b09a83b498caa0",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/splits/stage2/rl_test_frozen.json",
+      "bytes": 58868,
+      "sha256": "2dfcacc7888b046457f89198011198024fbb78546ddbcb77dde7375da77a5902",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/tokenizers/qwen2.5-3b-instruct/manifest.json",
+      "bytes": 453,
+      "sha256": "494f51ba87f7dea4f08bb66fd6c6e4d05747a141087738b412b1c94cbd9383cc",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/tokenizers/qwen2.5-3b-instruct/tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    },
+    {
+      "path": "data/tokenizers/qwen2.5-3b-instruct/tokenizer_config.json",
+      "bytes": 7305,
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "category": "GIT_IGNORED_PRIVATE_REQUIRED_E0"
+    }
+  ],
+  "splits": {
+    "dev": {
+      "count": 84,
+      "task_set_sha256": "8f8bc4ef239658a7f514a98a8a597935cee0a3b1e4766cdef6ef25b7b5a59fce"
+    },
+    "test": {
+      "count": 85,
+      "task_set_sha256": "639f6266a127b2e8b625401b52213e66e5b7117209d42b4bf15a2162acb100d5"
+    }
+  }
+}

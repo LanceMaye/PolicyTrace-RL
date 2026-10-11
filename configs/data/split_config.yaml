@@ -1,0 +1,11 @@
+version: policytrace-data-v1
+seed: 42
+rl_target_ratios: [0.70, 0.15, 0.15]
+sft_val_fraction: 0.10
+pass4_task_target: 50
+grouping: conservative_customer_email_order_and_confirmed_or_probable_provenance
+stratification: marginal_primary_type_snapshot_reference_proxy_mutation_communication
+rl_reference_proxy_thresholds: [6, 9]
+sft_source_turn_thresholds: [9, 13]
+cost_view_default: rl_train_full
+test_results_used: false

@@ -1,0 +1,300 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "inventory",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_data_inventory.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "status": "PASS",
+      "passed": true,
+      "result": {
+        "status": "PASS",
+        "required_files": 10,
+        "required_bytes": 46809598,
+        "issues": [],
+        "lock_sha256": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+        "test_bodies_deserialized": 0
+      }
+    },
+    {
+      "name": "environment",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_run.py",
+        "env-check",
+        "--config",
+        "configs/harness/stage3_1.example.json"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "status": "BLOCKED",
+      "passed": true,
+      "result": {
+        "status": "BLOCKED",
+        "blockers": [
+          "BLOCKED_MODEL",
+          "BLOCKED_PRICE",
+          "BLOCKED_ENV"
+        ],
+        "data": {
+          "status": "PASS",
+          "required_files": 10,
+          "required_bytes": 46809598,
+          "issues": [],
+          "lock_sha256": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+          "test_bodies_deserialized": 0
+        },
+        "fork": {
+          "commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+          "status": "M data/tau2/domains/retail/policy.md",
+          "upstream_working_tree_clean": false,
+          "authorized_policy_patch_only": true,
+          "policy_version": "areal-retail-sft-v1",
+          "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+          "patch_sha256": "3b5d4588cd11a3d7b5fbb5081c82dfc5bb168b1c0239fdcc3a2fac8ac0be69bb"
+        },
+        "dependencies": {
+          "torch": null,
+          "transformers": null,
+          "accelerate": null,
+          "huggingface-hub": "1.33.0",
+          "tokenizers": "0.23.2",
+          "tau2": "0.2.1.dev0",
+          "litellm": "1.104.2",
+          "httpx": "0.28.1"
+        },
+        "gpu": {
+          "checked": false,
+          "cuda_available": null,
+          "bf16_supported": null
+        },
+        "api_key_present": true,
+        "model_verified": false,
+        "weights_loaded": false,
+        "paid_api_calls": 0,
+        "test_bodies_deserialized": 0
+      }
+    },
+    {
+      "name": "dev_preview",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_run.py",
+        "dev-smoke",
+        "--split",
+        "dev",
+        "--config",
+        "configs/harness/stage3_1.example.json",
+        "--dry-run"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "status": "DRY_RUN",
+      "passed": true,
+      "result": {
+        "status": "DRY_RUN",
+        "blockers": [
+          "BLOCKED_MODEL",
+          "BLOCKED_PRICE",
+          "BLOCKED_ENV"
+        ],
+        "data": {
+          "status": "PASS",
+          "required_files": 10,
+          "required_bytes": 46809598,
+          "issues": [],
+          "lock_sha256": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+          "test_bodies_deserialized": 0
+        },
+        "fork": {
+          "commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+          "status": "M data/tau2/domains/retail/policy.md",
+          "upstream_working_tree_clean": false,
+          "authorized_policy_patch_only": true,
+          "policy_version": "areal-retail-sft-v1",
+          "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+          "patch_sha256": "3b5d4588cd11a3d7b5fbb5081c82dfc5bb168b1c0239fdcc3a2fac8ac0be69bb"
+        },
+        "dependencies": {
+          "torch": null,
+          "transformers": null,
+          "accelerate": null,
+          "huggingface-hub": "1.33.0",
+          "tokenizers": "0.23.2",
+          "tau2": "0.2.1.dev0",
+          "litellm": "1.104.2",
+          "httpx": "0.28.1"
+        },
+        "gpu": {
+          "checked": false,
+          "cuda_available": null,
+          "bf16_supported": null
+        },
+        "api_key_present": true,
+        "model_verified": false,
+        "weights_loaded": false,
+        "paid_api_calls": 0,
+        "test_bodies_deserialized": 0,
+        "mode": "dev-smoke",
+        "planned_tasks": 3,
+        "actual_episodes": 0,
+        "clients_instantiated": false
+      }
+    },
+    {
+      "name": "test_preview",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_run.py",
+        "e0-test",
+        "--split",
+        "test",
+        "--confirm-frozen-test",
+        "--config",
+        "configs/harness/stage3_1.example.json",
+        "--dry-run"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "status": "DRY_RUN",
+      "passed": true,
+      "result": {
+        "status": "DRY_RUN",
+        "blockers": [
+          "BLOCKED_MODEL",
+          "BLOCKED_PRICE",
+          "BLOCKED_ENV",
+          "BLOCKED_PROTOCOL"
+        ],
+        "data": {
+          "status": "PASS",
+          "required_files": 10,
+          "required_bytes": 46809598,
+          "issues": [],
+          "lock_sha256": "7c3cfe0a1c5e55f5ea9a5989d0075e3dcb61a053e096282604a4a8ad929f4244",
+          "test_bodies_deserialized": 0
+        },
+        "fork": {
+          "commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+          "status": "M data/tau2/domains/retail/policy.md",
+          "upstream_working_tree_clean": false,
+          "authorized_policy_patch_only": true,
+          "policy_version": "areal-retail-sft-v1",
+          "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+          "patch_sha256": "3b5d4588cd11a3d7b5fbb5081c82dfc5bb168b1c0239fdcc3a2fac8ac0be69bb"
+        },
+        "dependencies": {
+          "torch": null,
+          "transformers": null,
+          "accelerate": null,
+          "huggingface-hub": "1.33.0",
+          "tokenizers": "0.23.2",
+          "tau2": "0.2.1.dev0",
+          "litellm": "1.104.2",
+          "httpx": "0.28.1"
+        },
+        "gpu": {
+          "checked": false,
+          "cuda_available": null,
+          "bf16_supported": null
+        },
+        "api_key_present": true,
+        "model_verified": false,
+        "weights_loaded": false,
+        "paid_api_calls": 0,
+        "test_bodies_deserialized": 0,
+        "mode": "e0-test",
+        "planned_tasks": 85,
+        "actual_episodes": 0,
+        "clients_instantiated": false
+      }
+    },
+    {
+      "name": "test_gate",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_run.py",
+        "e0-test",
+        "--split",
+        "test",
+        "--config",
+        "configs/harness/stage3_1.example.json",
+        "--execute"
+      ],
+      "expected_exit": 2,
+      "exit_code": 2,
+      "status": "BLOCKED_TEST_CONFIRMATION",
+      "passed": true,
+      "result": {
+        "status": "BLOCKED_TEST_CONFIRMATION",
+        "test_bodies_deserialized": 0
+      }
+    },
+    {
+      "name": "download_preview",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_download_student.py",
+        "--local-dir",
+        "data/private/stage3_1/models/unused",
+        "--revision",
+        "0000000000000000000000000000000000000000",
+        "--dry-run"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "status": "DRY_RUN",
+      "passed": true,
+      "result": {
+        "status": "DRY_RUN",
+        "model": "Qwen/Qwen2.5-3B-Instruct",
+        "weight_revision": "0000000000000000000000000000000000000000",
+        "source": "hf",
+        "download_executed": false,
+        "weights_loaded": false,
+        "required_free_bytes": 10000000000
+      }
+    },
+    {
+      "name": "policy_verify",
+      "command": [
+        "D:\\Codes\\policytrace\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/stage3_1_bootstrap_policy.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "status": "M data/tau2/domains/retail/policy.md",
+      "passed": true,
+      "result": {
+        "commit": "e33e9511e4f51e5cfa16e12b02d0e4ab327b5887",
+        "status": "M data/tau2/domains/retail/policy.md",
+        "upstream_working_tree_clean": false,
+        "authorized_policy_patch_only": true,
+        "policy_version": "areal-retail-sft-v1",
+        "policy_sha256": "efd7cc72d1a553e11fe5c76e9ae27c092f0bbb9f2541066f4e0bd2d6134af936",
+        "patch_sha256": "3b5d4588cd11a3d7b5fbb5081c82dfc5bb168b1c0239fdcc3a2fac8ac0be69bb"
+      }
+    }
+  ],
+  "paid_api_calls": 0,
+  "weights_downloaded": false,
+  "test_bodies_deserialized": 0
+}
